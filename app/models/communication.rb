@@ -3,6 +3,6 @@ class Communication < ApplicationRecord
   has_many :attachment, dependent: :destroy
 
   validates_presence_of :title, :content
-  scope :adults,  -> { where(person_id: Person.adults.pluck(:id)) }
+  scope :adults_com,  -> { where(person_id: Person.adults.pluck(:id)) }
 
 end

@@ -1,4 +1,4 @@
-# spec/requests/todos_spec.rb
+# spec/requests/communication_spec.rb
 require 'rails_helper'
 
 RSpec.describe 'Communications API', type: :request do
@@ -7,7 +7,7 @@ RSpec.describe 'Communications API', type: :request do
   let!(:communications) { create_list(:communication, 10) }
   let(:person_id) { people.first.id }
 
-  # Test suite for GET /todos
+  # Test suite for GET /communications
   describe 'GET /communications' do
     # make HTTP get request before each example
     before { get '/communications' }

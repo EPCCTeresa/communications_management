@@ -1,8 +1,8 @@
 # app/controllers/communications_controller.rb
 class CommunicationsController < ApplicationController
-  # GET /todos
+  # GET /communications
   def index
-    @communications = Communication.adults
+    @communications = Communication.adults_com
 
     json_response(add_attachments_count)
   end

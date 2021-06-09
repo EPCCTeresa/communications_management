@@ -1,7 +1,7 @@
-# spec/models/todo_spec.rb
+# spec/models/attachment_spec.rb
 require 'rails_helper'
 
-# Test suite for the Todo model
+# Test suite for the Attachment model
 RSpec.describe Attachment, type: :model do
   # Association test
   # ensure Attachment model has a m:1 relationship with the Attachment model
